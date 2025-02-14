@@ -6,8 +6,8 @@
 //
 import Foundation
 
-enum DrinkLinkType{
-    case alcoholic // my future xD
+enum DrinkLinkType : Int{
+    case alcoholic = 0 // my future xD
     case nonAlcoholic // if i quit cs (i love cs)
     case cocktail // if i`ll be succeed
     var endPoint : String {
@@ -15,7 +15,7 @@ enum DrinkLinkType{
         case .alcoholic :
            return "a=Alcoholic"
         case .nonAlcoholic :
-            return "a=a=Non_Alcoholic"
+            return "a=Non_Alcoholic"
         case .cocktail :
             return "c=Cocktail"
         }
@@ -47,7 +47,10 @@ class DrinksApiManager: DrinksApiManagerProtocol {
             }
             do {
                 let decodedData = try JSONDecoder().decode(DrinkResponse.self, from: data)
-                completion(.success(decodedData))
+                DispatchQueue.main.async {
+                    completion(.success(decodedData))
+                }
+                
             } catch {
                 completion(.failure(error))
             }

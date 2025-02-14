@@ -1,24 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iqQ-9T-YYr">
+                                <rect key="frame" x="0.0" y="44" width="428" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="b7d-AS-APW"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Cocktails"/>
+                                    <segment title="non-alcoholic"/>
+                                    <segment title="alcoholic"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didTapDrinkType:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZU4-sQ-xGL"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oYv-Pr-Fh8">
+                                <rect key="frame" x="0.0" y="94" width="428" height="748"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oYv-Pr-Fh8" secondAttribute="trailing" id="Gj4-if-a5l"/>
+                            <constraint firstItem="iqQ-9T-YYr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QVP-FO-53w"/>
+                            <constraint firstItem="oYv-Pr-Fh8" firstAttribute="top" secondItem="iqQ-9T-YYr" secondAttribute="bottom" id="e2O-bH-fKE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oYv-Pr-Fh8" secondAttribute="bottom" constant="50" id="kXV-5a-qAD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iqQ-9T-YYr" secondAttribute="trailing" id="lE5-kH-xEf"/>
+                            <constraint firstItem="oYv-Pr-Fh8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pGA-rR-sY0"/>
+                            <constraint firstItem="iqQ-9T-YYr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="r5I-JD-T69"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="oYv-Pr-Fh8" id="Jwd-ei-t8k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-23" y="50"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
