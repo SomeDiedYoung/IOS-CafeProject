@@ -15,6 +15,9 @@
 		3F85B4D62D5F47A2008D880F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F85B4D42D5F47A2008D880F /* LaunchScreen.storyboard */; };
 		3F85B4DE2D5F4A9E008D880F /* DrinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F85B4DD2D5F4A9E008D880F /* DrinkModel.swift */; };
 		3F85B4E02D5F4C05008D880F /* DrinksApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F85B4DF2D5F4C05008D880F /* DrinksApiManager.swift */; };
+		3F85B4E22D5F59FA008D880F /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F85B4E12D5F59FA008D880F /* MealModel.swift */; };
+		3F85B4E42D5F5AA3008D880F /* MealsApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F85B4E32D5F5AA3008D880F /* MealsApiManager.swift */; };
+		3F85B4E62D5F5C23008D880F /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F85B4E52D5F5C23008D880F /* MealsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		3F85B4D72D5F47A2008D880F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F85B4DD2D5F4A9E008D880F /* DrinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkModel.swift; sourceTree = "<group>"; };
 		3F85B4DF2D5F4C05008D880F /* DrinksApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksApiManager.swift; sourceTree = "<group>"; };
+		3F85B4E12D5F59FA008D880F /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
+		3F85B4E32D5F5AA3008D880F /* MealsApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsApiManager.swift; sourceTree = "<group>"; };
+		3F85B4E52D5F5C23008D880F /* MealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,9 @@
 				3F85B4D72D5F47A2008D880F /* Info.plist */,
 				3F85B4DD2D5F4A9E008D880F /* DrinkModel.swift */,
 				3F85B4DF2D5F4C05008D880F /* DrinksApiManager.swift */,
+				3F85B4E12D5F59FA008D880F /* MealModel.swift */,
+				3F85B4E32D5F5AA3008D880F /* MealsApiManager.swift */,
+				3F85B4E52D5F5C23008D880F /* MealsViewController.swift */,
 			);
 			path = Cafe;
 			sourceTree = "<group>";
@@ -146,8 +155,11 @@
 			files = (
 				3F85B4E02D5F4C05008D880F /* DrinksApiManager.swift in Sources */,
 				3F85B4CE2D5F47A1008D880F /* ViewController.swift in Sources */,
+				3F85B4E42D5F5AA3008D880F /* MealsApiManager.swift in Sources */,
 				3F85B4CA2D5F47A1008D880F /* AppDelegate.swift in Sources */,
 				3F85B4DE2D5F4A9E008D880F /* DrinkModel.swift in Sources */,
+				3F85B4E62D5F5C23008D880F /* MealsViewController.swift in Sources */,
+				3F85B4E22D5F59FA008D880F /* MealModel.swift in Sources */,
 				3F85B4CC2D5F47A1008D880F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
