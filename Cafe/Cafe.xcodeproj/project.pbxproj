@@ -24,6 +24,7 @@
 		3FEC87362D635CF400B209C9 /* Meals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEC87352D635CF400B209C9 /* Meals.storyboard */; };
 		3FEC873A2D63681000B209C9 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC87382D63681000B209C9 /* MealTableViewCell.swift */; };
 		3FEC873B2D63681000B209C9 /* MealTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FEC87392D63681000B209C9 /* MealTableViewCell.xib */; };
+		3FEC873E2D6382A300B209C9 /* FirstOnboardingPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEC873D2D6382A300B209C9 /* FirstOnboardingPage.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		3FEC87352D635CF400B209C9 /* Meals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Meals.storyboard; sourceTree = "<group>"; };
 		3FEC87382D63681000B209C9 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		3FEC87392D63681000B209C9 /* MealTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealTableViewCell.xib; sourceTree = "<group>"; };
+		3FEC873D2D6382A300B209C9 /* FirstOnboardingPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstOnboardingPage.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		3F85B4C82D5F47A1008D880F /* Cafe */ = {
 			isa = PBXGroup;
 			children = (
+				3FEC873C2D637D5600B209C9 /* OnBoarding */,
 				3FEC87372D63649B00B209C9 /* DrinkTableViewCell */,
 				3F85B4C92D5F47A1008D880F /* AppDelegate.swift */,
 				3F85B4CB2D5F47A1008D880F /* SceneDelegate.swift */,
@@ -105,6 +108,14 @@
 				3F85B4E82D5F60F8008D880F /* DrinkTableViewCell.xib */,
 			);
 			path = DrinkTableViewCell;
+			sourceTree = "<group>";
+		};
+		3FEC873C2D637D5600B209C9 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				3FEC873D2D6382A300B209C9 /* FirstOnboardingPage.storyboard */,
+			);
+			path = OnBoarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +185,7 @@
 				3FEC87362D635CF400B209C9 /* Meals.storyboard in Resources */,
 				3F85B4D62D5F47A2008D880F /* LaunchScreen.storyboard in Resources */,
 				3FEC873B2D63681000B209C9 /* MealTableViewCell.xib in Resources */,
+				3FEC873E2D6382A300B209C9 /* FirstOnboardingPage.storyboard in Resources */,
 				3F85B4D32D5F47A2008D880F /* Assets.xcassets in Resources */,
 				3F85B4EA2D5F60F8008D880F /* DrinkTableViewCell.xib in Resources */,
 				3F85B4D12D5F47A1008D880F /* Main.storyboard in Resources */,
