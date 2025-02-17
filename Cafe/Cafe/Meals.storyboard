@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Meals View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MealsViewController" id="Y6W-OH-hqX" customClass="MealsViewController" customModule="Cafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fkP-N1-lgZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yHI-bP-CH0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ew0-Vc-GQF"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="chinese"/>
+                                    <segment title="french"/>
+                                    <segment title="american"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didTapMealType:" destination="Y6W-OH-hqX" eventType="valueChanged" id="MU2-OS-Hpq"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="OCS-pD-wsq">
+                                <rect key="frame" x="0.0" y="94" width="414" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Ku8-W7-wjW">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </tableView>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hDa-3v-NPt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OCS-pD-wsq" firstAttribute="leading" secondItem="hDa-3v-NPt" secondAttribute="leading" id="1kf-wv-SS0"/>
+                            <constraint firstItem="yHI-bP-CH0" firstAttribute="top" secondItem="hDa-3v-NPt" secondAttribute="top" id="f1W-Fe-kqm"/>
+                            <constraint firstItem="hDa-3v-NPt" firstAttribute="trailing" secondItem="yHI-bP-CH0" secondAttribute="trailing" id="kSN-Bk-1wp"/>
+                            <constraint firstItem="yHI-bP-CH0" firstAttribute="leading" secondItem="hDa-3v-NPt" secondAttribute="leading" id="pMC-MS-791"/>
+                            <constraint firstItem="hDa-3v-NPt" firstAttribute="trailing" secondItem="OCS-pD-wsq" secondAttribute="trailing" id="rfl-Pn-PDj"/>
+                            <constraint firstItem="OCS-pD-wsq" firstAttribute="top" secondItem="yHI-bP-CH0" secondAttribute="bottom" id="x77-hb-dlH"/>
+                            <constraint firstItem="hDa-3v-NPt" firstAttribute="bottom" secondItem="OCS-pD-wsq" secondAttribute="bottom" constant="50" id="z0E-42-Wig"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="OCS-pD-wsq" id="2Mu-Al-JTV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-12" y="54"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

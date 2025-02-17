@@ -12,7 +12,7 @@ import Foundation
 import Foundation
 
 struct MealResponse : Decodable {
-    let Meals : [Meal]
+    let meals : [Meal]
 }
 
 struct Meal : Decodable{

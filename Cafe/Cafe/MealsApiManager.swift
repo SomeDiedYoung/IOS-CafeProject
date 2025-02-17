@@ -8,8 +8,8 @@
 
 import Foundation
 
-enum MealLinkType{
-    case french
+enum MealLinkType : Int{
+    case french = 0
     case chinese
     case american
     var endPoint : String {
@@ -49,7 +49,8 @@ class MealsApiManager: MealsApiManagerProtocol {
             }
             do {
                 let decodedData = try JSONDecoder().decode(MealResponse.self, from: data)
-                completion(.success(decodedData))
+                DispatchQueue.main.async {
+                    completion(.success(decodedData))}
             } catch {
                 completion(.failure(error))
             }
