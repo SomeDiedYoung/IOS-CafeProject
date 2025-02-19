@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F7C5EAD2D65F637008FAAD3 /* YellowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7C5EAC2D65F637008FAAD3 /* YellowsViewController.swift */; };
+		3F7C5EAF2D65F65B008FAAD3 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7C5EAE2D65F65B008FAAD3 /* GreenViewController.swift */; };
+		3F7C5EB12D65F66A008FAAD3 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7C5EB02D65F66A008FAAD3 /* RedViewController.swift */; };
 		3F85B4CA2D5F47A1008D880F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F85B4C92D5F47A1008D880F /* AppDelegate.swift */; };
 		3F85B4CC2D5F47A1008D880F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F85B4CB2D5F47A1008D880F /* SceneDelegate.swift */; };
 		3F85B4CE2D5F47A1008D880F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F85B4CD2D5F47A1008D880F /* ViewController.swift */; };
@@ -24,10 +27,14 @@
 		3FEC87362D635CF400B209C9 /* Meals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEC87352D635CF400B209C9 /* Meals.storyboard */; };
 		3FEC873A2D63681000B209C9 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC87382D63681000B209C9 /* MealTableViewCell.swift */; };
 		3FEC873B2D63681000B209C9 /* MealTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FEC87392D63681000B209C9 /* MealTableViewCell.xib */; };
-		3FEC873E2D6382A300B209C9 /* FirstOnboardingPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEC873D2D6382A300B209C9 /* FirstOnboardingPage.storyboard */; };
+		3FEC873E2D6382A300B209C9 /* OnboardingPages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEC873D2D6382A300B209C9 /* OnboardingPages.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F7C5EAB2D65E5DE008FAAD3 /* YuseiMagic-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YuseiMagic-Regular.ttf"; sourceTree = "<group>"; };
+		3F7C5EAC2D65F637008FAAD3 /* YellowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowsViewController.swift; sourceTree = "<group>"; };
+		3F7C5EAE2D65F65B008FAAD3 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		3F7C5EB02D65F66A008FAAD3 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 		3F85B4C62D5F47A1008D880F /* Cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F85B4C92D5F47A1008D880F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F85B4CB2D5F47A1008D880F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +53,7 @@
 		3FEC87352D635CF400B209C9 /* Meals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Meals.storyboard; sourceTree = "<group>"; };
 		3FEC87382D63681000B209C9 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		3FEC87392D63681000B209C9 /* MealTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealTableViewCell.xib; sourceTree = "<group>"; };
-		3FEC873D2D6382A300B209C9 /* FirstOnboardingPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstOnboardingPage.storyboard; sourceTree = "<group>"; };
+		3FEC873D2D6382A300B209C9 /* OnboardingPages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingPages.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +68,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F7C5EAA2D65E57F008FAAD3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3F7C5EAB2D65E5DE008FAAD3 /* YuseiMagic-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		3F85B4BD2D5F47A1008D880F = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +95,7 @@
 		3F85B4C82D5F47A1008D880F /* Cafe */ = {
 			isa = PBXGroup;
 			children = (
+				3F7C5EAA2D65E57F008FAAD3 /* Fonts */,
 				3FEC873C2D637D5600B209C9 /* OnBoarding */,
 				3FEC87372D63649B00B209C9 /* DrinkTableViewCell */,
 				3F85B4C92D5F47A1008D880F /* AppDelegate.swift */,
@@ -113,7 +129,10 @@
 		3FEC873C2D637D5600B209C9 /* OnBoarding */ = {
 			isa = PBXGroup;
 			children = (
-				3FEC873D2D6382A300B209C9 /* FirstOnboardingPage.storyboard */,
+				3FEC873D2D6382A300B209C9 /* OnboardingPages.storyboard */,
+				3F7C5EAC2D65F637008FAAD3 /* YellowsViewController.swift */,
+				3F7C5EAE2D65F65B008FAAD3 /* GreenViewController.swift */,
+				3F7C5EB02D65F66A008FAAD3 /* RedViewController.swift */,
 			);
 			path = OnBoarding;
 			sourceTree = "<group>";
@@ -185,7 +204,7 @@
 				3FEC87362D635CF400B209C9 /* Meals.storyboard in Resources */,
 				3F85B4D62D5F47A2008D880F /* LaunchScreen.storyboard in Resources */,
 				3FEC873B2D63681000B209C9 /* MealTableViewCell.xib in Resources */,
-				3FEC873E2D6382A300B209C9 /* FirstOnboardingPage.storyboard in Resources */,
+				3FEC873E2D6382A300B209C9 /* OnboardingPages.storyboard in Resources */,
 				3F85B4D32D5F47A2008D880F /* Assets.xcassets in Resources */,
 				3F85B4EA2D5F60F8008D880F /* DrinkTableViewCell.xib in Resources */,
 				3F85B4D12D5F47A1008D880F /* Main.storyboard in Resources */,
@@ -199,12 +218,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7C5EAF2D65F65B008FAAD3 /* GreenViewController.swift in Sources */,
 				3F85B4E02D5F4C05008D880F /* DrinksApiManager.swift in Sources */,
 				3F85B4CE2D5F47A1008D880F /* ViewController.swift in Sources */,
 				3F85B4E42D5F5AA3008D880F /* MealsApiManager.swift in Sources */,
+				3F7C5EB12D65F66A008FAAD3 /* RedViewController.swift in Sources */,
 				3F85B4CA2D5F47A1008D880F /* AppDelegate.swift in Sources */,
 				3FEC873A2D63681000B209C9 /* MealTableViewCell.swift in Sources */,
 				3F85B4E92D5F60F8008D880F /* DrinkTableViewCell.swift in Sources */,
+				3F7C5EAD2D65F637008FAAD3 /* YellowsViewController.swift in Sources */,
 				3F85B4DE2D5F4A9E008D880F /* DrinkModel.swift in Sources */,
 				3F85B4E62D5F5C23008D880F /* MealsViewController.swift in Sources */,
 				3F85B4E22D5F59FA008D880F /* MealModel.swift in Sources */,
