@@ -15,11 +15,11 @@ enum MealLinkType : Int{
     var endPoint : String {
         switch self {
         case .french :
-           return "a=American"
+           return "French"
         case .chinese :
-            return "a=French"
+            return "Chinese"
         case .american :
-            return "a=Chinese"
+            return "American"
         }
     }
 }
@@ -33,7 +33,7 @@ protocol MealsApiManagerProtocol {
 
 class MealsApiManager: MealsApiManagerProtocol {
     func fetchMeals(with type : MealLinkType,completion: @escaping (Result<MealResponse, Error>) -> ()) {
-        let urlString = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?\(type.endPoint)"
+        let urlString = "https://www.themealdb.com/api/json/v1/1/filter.php?a=\(type.endPoint)"
         guard let url = URL(string: urlString) else {
             return
         }

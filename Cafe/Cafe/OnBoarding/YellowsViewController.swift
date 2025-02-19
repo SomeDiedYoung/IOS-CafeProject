@@ -17,7 +17,7 @@ class YellowsViewController: UIViewController {
     
 
     @IBAction func didtabNextPage(_ sender: UIButton) {
-        let vc = UIStoryboard(name: "GreenViewController", bundle: nil).instantiateViewController(withIdentifier: "GreenViewController")
+        let vc = UIStoryboard(name: "OnboardingPages", bundle: nil).instantiateViewController(withIdentifier: "GreenViewController")
         navigationController?.pushViewController(vc, animated: true)
         
     }

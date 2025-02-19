@@ -16,7 +16,7 @@ class GreenViewController: UIViewController {
     }
     
     @IBAction func didTapNextPage(_ sender: UIButton) {
-        let vc = UIStoryboard(name: "RedViewController", bundle: nil).instantiateViewController(withIdentifier: "RedViewController")
+        let vc = UIStoryboard(name: "OnboardingPages", bundle: nil).instantiateViewController(withIdentifier: "RedViewController")
         navigationController?.pushViewController(vc, animated: true)
     }
 }

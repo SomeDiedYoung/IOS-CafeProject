@@ -37,7 +37,8 @@ class MealsViewController: UIViewController {
     private func fetchMeals(with type : MealLinkType = .chinese){
         mealsManager = MealsApiManager()
         mealsManager?.fetchMeals(with: type,completion: {
-            result in switch result {
+            result in
+            switch result {
             case .success(let mealsResponse):
                 self.meals = mealsResponse.meals
             case .failure(let error) :
