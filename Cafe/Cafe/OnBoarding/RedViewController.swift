@@ -17,6 +17,8 @@ class RedViewController: UIViewController {
     
 
     @IBAction func didTapNext(_ sender: UIButton) {
+        let vc = UIStoryboard(name: "TabBar", bundle: nil).instantiateViewController(withIdentifier: "TabBarViewController")
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 

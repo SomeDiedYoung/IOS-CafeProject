@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There you can find your favorite food " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4M-rb-Kw1">
-                                <rect key="frame" x="0.0" y="129" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="173" width="414" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="y14-A0-1oh"/>
                                 </constraints>
@@ -28,14 +28,14 @@
                                 <size key="shadowOffset" width="1" height="2"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AmericanFood" translatesAutoresizingMaskIntoConstraints="NO" id="5YC-1E-OVI">
-                                <rect key="frame" x="67" y="349.5" width="280" height="280"/>
+                                <rect key="frame" x="67" y="393.5" width="280" height="280"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="280" id="AO7-jB-2Z1"/>
                                     <constraint firstAttribute="width" constant="280" id="oHU-i8-el3"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRy-rC-rK1">
-                                <rect key="frame" x="25" y="709.5" width="364" height="70"/>
+                                <rect key="frame" x="25" y="753.5" width="364" height="70"/>
                                 <color key="backgroundColor" red="0.98812134730000001" green="0.76174607920000004" blue="0.17849023250000001" alpha="0.57000337980000004" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="W8x-hO-Med"/>
@@ -52,7 +52,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A fusion of French, Chinese, and American cuisine." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2G9-9Q-rA0">
-                                <rect key="frame" x="15" y="284" width="384" height="60.5"/>
+                                <rect key="frame" x="15" y="328" width="384" height="60.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -77,10 +77,11 @@
                             <constraint firstItem="2G9-9Q-rA0" firstAttribute="centerX" secondItem="j4M-rb-Kw1" secondAttribute="centerX" id="nPh-Qi-sAw"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="08i-B6-GQ3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-13.043478260869566" y="53.571428571428569"/>
+            <point key="canvasLocation" x="897.10144927536237" y="53.571428571428569"/>
         </scene>
         <!--Green View Controller-->
         <scene sceneID="j4F-IT-m6L">
@@ -162,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hN9-IO-t3W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="54"/>
+            <point key="canvasLocation" x="1737.68115942029" y="53.571428571428569"/>
         </scene>
         <!--Red View Controller-->
         <scene sceneID="lvp-xD-xWq">
@@ -244,7 +245,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EnN-nB-wIu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1685.5072463768117" y="53.571428571428569"/>
+            <point key="canvasLocation" x="2595.6521739130435" y="53.571428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2VX-LE-7W1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qMC-jh-4My" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LWQ-Hh-lGK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="SWq-8s-9Ij"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J5F-Eo-n49" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.043478260869566" y="53.571428571428569"/>
         </scene>
     </scenes>
     <resources>
