@@ -14,6 +14,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="standardAppearance"/>
                     </tabBar>
                     <connections>
                         <segue destination="8kL-vC-aqe" kind="relationship" relationship="viewControllers" id="kqh-9V-d6q"/>
@@ -28,7 +29,7 @@
         <scene sceneID="bnc-aw-mbV">
             <objects>
                 <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="ViewController" id="wN8-7n-meF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="HlJ-fu-zMm"/>
+                    <tabBarItem key="tabBarItem" title="cocktail" image="cocktail" id="HlJ-fu-zMm"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Af-bT-Rze" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -38,11 +39,15 @@
         <scene sceneID="VVz-WN-aBV">
             <objects>
                 <viewControllerPlaceholder storyboardName="Meals" referencedIdentifier="MealsViewController" id="8kL-vC-aqe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="GsH-ka-q1u"/>
+                    <tabBarItem key="tabBarItem" title="Meals" image="meal" id="GsH-ka-q1u"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOt-Nm-XxR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-543" y="-59"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cocktail" width="64" height="64"/>
+        <image name="meal" width="64" height="64"/>
+    </resources>
 </document>
