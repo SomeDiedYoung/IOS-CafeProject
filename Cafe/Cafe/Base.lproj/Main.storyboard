@@ -31,7 +31,7 @@
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oYv-Pr-Fh8">
-                                <rect key="frame" x="0.0" y="94" width="428" height="748"/>
+                                <rect key="frame" x="0.0" y="94" width="428" height="798"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -41,7 +41,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oYv-Pr-Fh8" secondAttribute="trailing" id="Gj4-if-a5l"/>
                             <constraint firstItem="iqQ-9T-YYr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QVP-FO-53w"/>
                             <constraint firstItem="oYv-Pr-Fh8" firstAttribute="top" secondItem="iqQ-9T-YYr" secondAttribute="bottom" id="e2O-bH-fKE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oYv-Pr-Fh8" secondAttribute="bottom" constant="50" id="kXV-5a-qAD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oYv-Pr-Fh8" secondAttribute="bottom" id="kXV-5a-qAD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iqQ-9T-YYr" secondAttribute="trailing" id="lE5-kH-xEf"/>
                             <constraint firstItem="oYv-Pr-Fh8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pGA-rR-sY0"/>
                             <constraint firstItem="iqQ-9T-YYr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="r5I-JD-T69"/>
