@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DqS-2b-MEM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DqS-2b-MEM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,7 +30,7 @@
         <scene sceneID="bnc-aw-mbV">
             <objects>
                 <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="ViewController" id="wN8-7n-meF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="cocktail" image="cocktail" id="HlJ-fu-zMm"/>
+                    <tabBarItem key="tabBarItem" title="" id="HlJ-fu-zMm"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Af-bT-Rze" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -39,15 +40,11 @@
         <scene sceneID="VVz-WN-aBV">
             <objects>
                 <viewControllerPlaceholder storyboardName="Meals" referencedIdentifier="MealsViewController" id="8kL-vC-aqe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Meals" image="meal" id="GsH-ka-q1u"/>
+                    <tabBarItem key="tabBarItem" title="" id="GsH-ka-q1u"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOt-Nm-XxR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-543" y="-59"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="cocktail" width="64" height="64"/>
-        <image name="meal" width="64" height="64"/>
-    </resources>
 </document>

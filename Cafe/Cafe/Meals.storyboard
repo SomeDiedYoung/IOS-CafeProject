@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Meals View Controller-->
+        <!--Meals-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="MealsViewController" id="Y6W-OH-hqX" customClass="MealsViewController" customModule="Cafe" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="OCS-pD-wsq">
-                                <rect key="frame" x="0.0" y="98" width="414" height="764"/>
+                                <rect key="frame" x="0.0" y="98" width="414" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Ku8-W7-wjW">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
@@ -53,6 +53,8 @@
                             <constraint firstItem="hDa-3v-NPt" firstAttribute="bottom" secondItem="OCS-pD-wsq" secondAttribute="bottom" id="z0E-42-Wig"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Meals" image="fork.knife" catalog="system" id="Luq-6f-Noc"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="OCS-pD-wsq" id="2Mu-Al-JTV"/>
                     </connections>
@@ -63,6 +65,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="fork.knife" catalog="system" width="94" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
